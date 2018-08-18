@@ -30,6 +30,8 @@ plt.show()  # You must call plt.show() to make graphics appear.
 ~~~
 {: .python}
 
+![sine wave plot](../fig/matplotlib_sin.png)
+
 With just a little bit of extra work we can easily plot multiple lines at once, and add a title, legend, and axis labels:
 
 ~~~
@@ -52,7 +54,9 @@ plt.show()
 ~~~
 {: .python}
 
-You can read much more about the `plot` function in the [documentation.](https://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot)
+![subplot matplotlib](../fig/matplotlib_twolines.png)
+
+To save it use `plt.savefig('figname.ext')`. You can read much more about the `plot` function in the [documentation.](https://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot)
 
 ## Subplots
 You can plot different things in the same figure using the `subplot` function. Here is an example:
@@ -83,6 +87,8 @@ plt.title('Cosine')
 plt.show()
 ~~~
 {: .pyhon}
+
+![matplotlib subplot](../fig/matplotlib_subplot.png)
 
 You can read much more about the subplot function in the [documentation.](http://cs231n.github.io/python-numpy-tutorial/)
 
