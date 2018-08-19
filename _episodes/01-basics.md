@@ -55,7 +55,6 @@ keypoints:
     *   It allows you to display figures next to the code that produces them
         to tell a complete story of the analysis.
 
-FIXME: diagram
 
 > ## How It's Stored
 >
@@ -314,6 +313,9 @@ print(len('helium'))
 ~~~
 {: .output}
 
+## Python containers
+Python includes several built-in containers types: list, dictionaries, sets, and tupple.
+
 ## A list stores many values in a one-dimensional structure.
 
 *   Values separated by ',' contained within square brackets `[...]`.
@@ -443,6 +445,7 @@ IndexError: string index out of range
 > 4.  Publish.
 {: .challenge}
 
+We will study about dictionaries, sets, and tupple later.
 > ## More Math
 >
 > What is displayed when a Python cell in a notebook
