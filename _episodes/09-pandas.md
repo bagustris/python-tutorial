@@ -25,10 +25,10 @@ import pandas as pd
 ~~~
 {: .python}
 
-To load your csv into a Pandas data frame, you can use the .read_csv() method. [.read_csv](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html) has a lot of potential parameters but for example we will simply pass .read_csv() the file name, which is located in the same folder as our Jupyter Notebook. 
+To load your csv into a Pandas data frame, you can use the .read_csv() method. [.read_csv](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html) has a lot of potential parameters but for example we will simply pass .read_csv() the file name, which is located in the data folder as our Jupyter Notebook. 
 
 ~~~
-temperature_data = pd.read_csv("temperature.csv") 
+temperature_data = pd.read_csv("./data/temperature.csv") 
 ~~~
 {: .python}
 
@@ -36,32 +36,58 @@ temperature_data = pd.read_csv("temperature.csv")
 
 It is a good idea to ensure your dataframe loaded correctly. Thankfully, Pandas has a few built in methods to help - [shape](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.shape.html?highlight=shape#pandas.DataFrame.shape), [.head()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.head.html), [.tail()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.tail.html), and [.describe()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.describe.html). The shape method will return a tuple that has the number of rows in the first position and the number of columns in the second position. Methods .head() and .tail() return the first 5 rows and the last 5 rows respectively. Finally, .describe() will return a variety of things depending on the data type. For numeric data types, like our example, it includes count, mean, standard deviation, minimum, quartiles, and the maximum. For other object types it will return count, unique, most common, and frequency of the most common. Additionally, timestamps will also include the first and last item. 
 
+To show the shape (number or rows, number of columns) use:
+
 ~~~
-print("The shape of our data frame", temperature_data.shape)
-print("\n The head of our data frame \n", temperature_data.head())
-print("\n The tail of our data frame \n", temperature_data.tail())
-print("\n A quick description of our data frame\n", temperature_data.describe())
+temperature_data.shape
 ~~~
 {: .python}
-~~~
-The shape of our dataframe: (135, 3)
 
- The head of our dataframe: 
+~~~
+(135, 3)
+~~~
+{: .output}
+
+To show the head (first five rows) use:
+~~~
+temperature_data.head()
+~~~
+{: .python}
+
+~~~
     Year  Annual_Mean  5-year_Mean
 0  1880        -0.23          NaN
 1  1881        -0.15          NaN
 2  1882        -0.18        -0.21
 3  1883        -0.21        -0.22
 4  1884        -0.29        -0.24
+~~~
+{: .output}
 
- The tail of our dataframe: 
+To show the tail(last five rows) of the data, use:
+~~~
+temperature_data.tail()
+~~~
+{: .python}
+
+~~~
       Year  Annual_Mean  5-year_Mean
 130  2010         0.66         0.57
 131  2011         0.55         0.59
 132  2012         0.57         0.61
 133  2013         0.60          NaN
 134  2014         0.67          NaN
+~~~
+{: .output}
 
+To show simple statistics of the data, use:
+
+~~~
+temperature_data.describe
+~~~
+{: .python}
+
+~~~
  A quick description of our dataframe: 
                Year  Annual_Mean  5-year_Mean
 count   135.000000   135.000000   131.000000
@@ -74,6 +100,8 @@ min    1880.000000    -0.480000    -0.450000
 max    2014.000000     0.670000     0.610000
 ~~~
 {: .output}
+
+We can combine those result above with `print`.
 
 ## Referencing Columns  
 
