@@ -1,5 +1,5 @@
 ---
-title: "Dictionaries"
+title: "Dictionaries, Sets & Tuples"
 teaching: 15
 exercises: 20
 questions:
@@ -11,7 +11,11 @@ objectives:
 keypoints:
 - "Use sets to store unique unordered values."
 - "Use dictionaries to store extra information with those values."
+- "Use tuples to store list including key of dictionaries"
 ---
+
+# Set
+A set is an unordered collection of distinct elements.
 
 ## Use a set to store unique values.
 
@@ -82,6 +86,9 @@ Turing
 ~~~
 {: .output}
 
+# Dictionary
+A dictionary stores (key, value) pairs.
+
 ## Use a dictionary to store key/value pairs.
 
 *   Equivalently, to store extra information with elements of a set.
@@ -142,6 +149,18 @@ print('atomic number of lithium:', elements['Li'])
 atomic number of lithium: 3
 ~~~
 {: .output}
+
+# Tuples
+A tuple is an (immutable) ordered list of values. A tuple is in many ways similar to a list; one of the most important differences is that tuples can be used as keys in dictionaries and as elements of sets, while lists cannot. Tuple is written as lis, `(x, y)`. Here is a trivial example:
+
+```
+d = {(x, x + 1): x for x in range(10)}  # Create a dictionary with tuple keys
+t = (5, 6)        # Create a tuple
+print(type(t))    # Prints "<class 'tuple'>"
+print(d[t])       # Prints "5"
+print(d[(1, 2)])  # Prints "1"
+```
+{: .python}
 
 > ## How Heavy Is This Molecule?
 >

@@ -390,7 +390,7 @@ Broadcasting two arrays together follows these rules:
 4. After broadcasting, each array behaves as if it had shape equal to the elementwise maximum of shapes of the two input arrays.
 5. In any dimension where one array had size 1 and the other array had size greater than 1, the first array behaves as if it were copied along that dimension
 
-If this explanation does not make sense, try reading the explanation from the [documentation].(http://docs.scipy.org/doc/numpy/user/basics.broadcasting.html)
+If this explanation does not make sense, try reading the explanation from the [documentation](http://docs.scipy.org/doc/numpy/user/basics.broadcasting.html)
 
 Functions that support broadcasting are known as *universal functions.* You can find the list of all universal functions in the [documentation.](http://docs.scipy.org/doc/numpy/reference/ufuncs.html#available-ufuncs)
 
@@ -443,7 +443,7 @@ print(x * 2)
 {: .python}
 
 Broadcasting typically makes your code more concise and faster, so you should strive to use it where possible.
-This is the end of Numpy lesson, should you need more explanation, please consult to the [reference]. (http://docs.scipy.org/doc/numpy/reference/)
+This is the end of Numpy lesson, should you need more explanation, please consult to the [reference](http://docs.scipy.org/doc/numpy/reference/)
 
 ## Exercises
 
