@@ -483,6 +483,14 @@ temperature_data.ix[0:5]
 ~~~
 {: .output}
 
+Finally, we can count the number of NaN in data using Numpy provided function as the following, 
+
+~~~
+np.count_nonzero(~np.isnan(data))
+~~~
+{: .python}
+
+From the best practice, Pandas is suitable and intended for dataframe, whileNumpy is for matrix/array. If data has header (columns label), it is better to process with Pandas, otherwise Numpy's array works in similar way of Matlab/Octave.
 
 ## Exercises
 
