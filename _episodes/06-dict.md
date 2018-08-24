@@ -1,5 +1,5 @@
 ---
-title: "Dictionaries, Sets & Tuples"
+title: "Sets, Dictionary & Tuples"
 teaching: 15
 exercises: 20
 questions:
@@ -13,6 +13,8 @@ keypoints:
 - "Use dictionaries to store extra information with those values."
 - "Use tuples to store list including key of dictionaries"
 ---
+
+We already know about list `[]` which is immutable, how about Set, Dictionary and Tuple...?
 
 # Set
 A set is an unordered collection of distinct elements.
