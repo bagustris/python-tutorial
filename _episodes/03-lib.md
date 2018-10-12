@@ -75,6 +75,30 @@ FUNCTIONS
 ~~~
 {: .output}
 
+## Import from python script
+
+Supposed you have python script namely module1.py. Inside that script 
+there is function namely function1(x, y) and function2(x, y). You want to use it 
+in another script. So here is to to import if that module1.py in the same directory.
+
+~~~
+from module1 import function1, function2
+
+~~~
+{: .python}
+
+If the location of module1.py outside the current directory, 
+we need to import `sys` first and append the location. For example 
+the location of module1.py is in `../A2`
+
+~~~
+import sys
+sys.append('../A2')
+from module2 import function3, function4
+
+~~~
+{: .python}
+
 ## Import specific items from a library to shorten programs.
 
 *   Use `from...import...` to load only specific items from a library.
