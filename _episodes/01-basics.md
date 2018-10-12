@@ -27,10 +27,25 @@ keypoints:
 ## Python programs are plain text files.
 
 *   They use the `.py` extension by convention.
-*   It's common to write them using a text editor but we are going to use
-    the [Jupyter Notebook][jupyter].
+*   It's common to write them using a text editor or running interactively using ipython,
+    but we are going to use the [Jupyter Notebook][jupyter].
     *   Notebook files use `.ipynb` extension.
     *   Provides code completion and other helpful features.
+
+## IPtyhon
+*   Open it with --pylab option to enable plot interatively
+*   When you need to edit the module and want to take effect immedietly use autoload magic
+
+~~~
+%load_ext autoreload
+from module1 import function1
+## edit module1
+%autoreload 2
+
+~~~
+{: .python}
+
+For more information about autoreload, you can refer to the documentation [here](https://ipython.readthedocs.io/en/stable/config/extensions/autoreload.html?highlight=autoreload).
 
 ## Use the Jupyter Notebook for editing and running Python.
 
