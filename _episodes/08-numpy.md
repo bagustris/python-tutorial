@@ -191,7 +191,7 @@ print(a[a > 2])     # Prints "[3 4 5 6]"
 ~~~
 {: .python}
 
-For brevity we have left out a lot of details about numpy array indexing; if you want to know more you should read the [documentation.] (http://docs.scipy.org/doc/numpy/reference/arrays.indexing.html)
+For brevity we have left out a lot of details about numpy array indexing; if you want to know more you should read the [documentation.](http://docs.scipy.org/doc/numpy/reference/arrays.indexing.html)
 
 ## Datatypes
 Every numpy array is a grid of elements of the same type. Numpy provides a large set of numeric datatypes that you can use to construct arrays. Numpy tries to guess a datatype when you create an array, but functions that construct arrays usually also include an optional argument to explicitly specify the datatype. Here is an example:
@@ -210,7 +210,7 @@ print(x.dtype)                         # Prints "int64"
 ~~~
 {:python}
 
-You can read all about numpy datatypes in the [documentation.] (http://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)
+You can read all about numpy datatypes in the [documentation.](http://docs.scipy.org/doc/numpy/reference/arrays.dtypes.html)
 
 ## Array math
 Basic mathematical functions operate elementwise on arrays, and are available both as operator overloads and as functions in the numpy module:
@@ -443,7 +443,7 @@ print(x * 2)
 {: .python}
 
 Broadcasting typically makes your code more concise and faster, so you should strive to use it where possible.
-This is the end of Numpy lesson, should you need more explanation, please consult to the [reference](http://docs.scipy.org/doc/numpy/reference/)
+This is the end of Numpy lesson, should you need more explanation, please consult to the [reference.](http://docs.scipy.org/doc/numpy/reference/)
 
 ## Exercises
 
@@ -452,4 +452,4 @@ This is the end of Numpy lesson, should you need more explanation, please consul
 
 ### Reference
 
-1. http://cs231n.github.io/python-numpy-tutorial/
+1. [http://cs231n.github.io/python-numpy-tutorial/](http://cs231n.github.io/python-numpy-tutorial/)
