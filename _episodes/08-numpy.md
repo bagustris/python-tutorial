@@ -329,7 +329,7 @@ print(v.T)  # Prints "[1 2 3]"
 
 Numpy provides many more functions for manipulating arrays; you can see the full list in the [documentation.](https://docs.scipy.org/doc/numpy/reference/routines.array-manipulation.html)
 
-## Broadcasting
+## Broadcasting: Replace for loops with vectorized indexing operations.
 Broadcasting is a powerful mechanism that allows numpy to work with arrays of different shapes when performing arithmetic operations. Frequently we have a smaller array and a larger array, and we want to use the smaller array multiple times to perform some operation on the larger array.
 
 For example, suppose that we want to add a constant vector to each row of a matrix. We could do it like this:
