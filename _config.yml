@@ -6,10 +6,10 @@
 carpentry: "swc"
 
 # Overall title for pages.
-title: "Python as a Second Language"
+title: "Learning Scientific Python with IPython"
 
 # Contact email address.
-email: lessons@software-carpentry.org
+email: bagus@ep.its.ac.id
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
