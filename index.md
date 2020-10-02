@@ -17,7 +17,7 @@ Please note that this lesson uses Python 3 rather than Python 2.
 >     how to start a Python interpreter,
 >     and what variables, loops, conditionals, indexing, and function calls are.
 >
-> 2. Learners must install Python before the class starts.
+> 2. Learners must install Python and IPython before the class starts.
 >
 >    Please see [the setup instructions]({{ page.root }}/setup/)
 >    for details.
