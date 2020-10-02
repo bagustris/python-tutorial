@@ -3,10 +3,10 @@ layout: lesson
 root: .
 ---
 
-This lesson is an introduction to programming in Python
-for people who are already comfortable in some other language
-such as Perl or MATLAB.
-This lesson references the Jupyter Notebook,
+This lesson is an introduction to programming in Python, 
+particularly for people who are already comfortable in some other language
+such as MATLAB or GNU-Octave.
+This lesson references the IPython,
 but can be taught using a regular Python interpreter as well.
 Please note that this lesson uses Python 3 rather than Python 2.
 
