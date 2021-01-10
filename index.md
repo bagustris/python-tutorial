@@ -3,7 +3,7 @@ layout: lesson
 root: .
 ---
 
-This lesson is an introduction to programming in Python. 
+These lessons below are an introduction to programming in Python. 
 Ideally, these lessons are intedend particularly for people who are already comfortable in some other language
 such as MATLAB or GNU-Octave. Howwever, novice students to programming are welcome to try.
 These lessons references the IPython -- the interactive  python --
