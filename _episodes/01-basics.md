@@ -6,13 +6,12 @@ questions:
 - "How do I run Python programs?"
 - "What are Python's basic data types?"
 objectives:
-- "Launch the Jupyter Notebook, create new notebooks, and exit the Notebook."
-- "Create Markdown cells in a notebook."
-- "Create and run Python cells in a notebook."
+- "Launch the IPython, doing some operations, and exit the IPython."
+- "Create and run Python commands in IPython."
 - "Write simple scripts that use atomic data types, variables, and lists."
 keypoints:
 - "Python programs are plain text files."
-- "We can write Python in the Jupyter Notebook as well (which isn't plain text)."
+- "We can write Python in the IPython as well as plain text)."
 - "Most common atomic data types are `int`, `float`, `str`, and `bool`."
 - "Most common type of collection is `list`."
 - "Use variables to store values."
@@ -28,8 +27,9 @@ keypoints:
 
 *   They use the `.py` extension by convention.
 *   It's common to write them using a text editor or running interactively using ipython,
-    but we are going to use the [Jupyter Notebook][jupyter].
-    *   Notebook files use `.ipynb` extension.
+    but we are going to use the [IPython][IPython].
+    *   Python files use `.py` extension.
+    *   We can run that file using `run file.py` inside IPython
     *   Provides code completion and other helpful features.
 
 ## IPtyhon
@@ -47,184 +47,38 @@ from module1 import function1
 
 For more information about autoreload, you can refer to the documentation [here](https://ipython.readthedocs.io/en/stable/config/extensions/autoreload.html?highlight=autoreload).
 
-## Use the Jupyter Notebook for editing and running Python.
+## Use the IPython for running Python.
 
-*   The [Anaconda package manager][anaconda] is an automated way to install the Jupyter notebook.
-    *   See [the setup instructions]({{ page.root }}/setup/) for Anaconda installation instructions.
+*   The [PIP package manager][pip] is an automated way to install the Jupyter notebook.
+    *   In Ubuntu-based, `pip` can be installed with `sudo apt install python3-pip`.
+    *   If you have multiple version of Python (e.g., python3.6, python3.8), use instrunction with [get-pip](https://pip.pypa.io/en/stable/installing/#)
 *   "Batteries included": comes with lots of scientific libraries.
-*   Once you have installed Python and the Jupyter Notebook requirements, open a shell and type:
+*   Once you have installed Python and the IPython requirements, open a shell and type:
 
     ~~~
-    $ jupyter notebook
+    $ python3.6 -m IPython
     ~~~
     {: .source}
 
-*   This will start a Jupyter Notebook server and open your default web browser.
-*   You can type code into the browser and see the result when the web page talks to the server.
+    where `python3.6` is the python version you want to launch with IPython.
+*   You can type code inside the shell and see the result below you commands.
 *   This has several advantages:
     *   You can easily type, edit, and copy and paste blocks of code.
     *   Tab complete allows you to easily access the names of things you are using
         and learn more about them.
-    *   It allows you to annotate your code with links, different sized text, bullets, etc.
-        to make it more accessible to you and your collaborators.
+    *   You don't a browser (like Jupyter Notebook) and complicated setup.
     *   It allows you to display figures next to the code that produces them
         to tell a complete story of the analysis.
 
-
-> ## How It's Stored
->
-> *   The notebook file is stored in a format called JSON.
-> *   Just like a webpage, what's saved looks different from what you see in your browser.
-> *   But this format allows Jupyter to mix software (in several languages) with documentation
-      and graphics, all in one file.
-{: .callout}
-
-## The Notebook has Control and Edit modes.
-
-*   Open a new notebook from the dropdown menu in the top right corner of the file browser page.
-*   Each notebook contains one or more cells of various types.
 
 > ## Code vs. Text
 >
 > We often use the term "code" to mean
 > "the source code of software written in a language such as Python".
-> A "code cell" in a Notebook is a cell that contains software;
-> a "text cell" is one that contains ordinary prose written for human beings.
+> A "code command" in a command is a IPython that contains software;
+> a "text comment started bt `#`" is one that contains ordinary prose written for human beings.
 {: .callout}
 
-*   If you press "esc" and "return" alternately,
-    the outer border of your code cell will change from gray to green.
-    *   The difference in color is subtle.
-*   These are the control (gray) and edit (green) modes of your notebook.
-*   If you use the "esc" and "return" keys to make the surround gray
-    and then press the "H" key,
-    a list of all the shortcut keys will appear.
-*   When in control mode (esc/gray),
-    *   The "B" key will make a new cell below the currently selected cell.
-    *   The "A" key will make one above.
-    *   The "X" key will delete the current cell.
-*   All actions can be done using the menus,
-    but there are lots of keyboard shortcuts to speed things up.
-*   If you remember the "esc" and "H" shortcut, you will be able to find out all the rest.
-
-## Use the keyboard and mouse to select and edit cells.
-
-*   Pressing the "return" key turns the surround green to
-    signify edit mode and you can type into the cell.
-*   Because we want to be able to write many lines of code in a single cell,
-    pressing the "return" key when the border is green moves the cursor to the next line in the cell
-    just like in a text editor.
-*   We need some other way to tell the Notebook we want to run what's in the cell.
-*   Pressing the "return" key and the "shift" key together will execute the contents of the cell.
-
-## The Notebook will turn Markdown into pretty-printed documentation.
-
-*   Notebooks can also render [Markdown][markdown].
-    *   A simple plain-text format for writing lists, links,
-        and other things that might go into a web page.
-    *   Equivalently, a subset of HTML that looks like what you'd send in an old-fashioned email.
-*   Turn the current cell into a Markdown cell by entering
-    the control mode (esc/gray) and press the "M" key.
-*   `In [ ]:` will disappear to show it is no longer a code cell
-    and you will be able to write in Markdown.
-*   Turn the current cell into a Code cell
-    by entering the control mode (esc/gray) and press the "Y" key.
-
-## Markdown does most of what HTML does.
-
-<div class="row">
-  <div class="col-md-6" markdown="1">
-~~~
-*   Use asterisks
-*   to create
-*   bullet lists.
-~~~
-{: .source}
-  </div>
-  <div class="col-md-6" markdown="1">
-*   Use asterisks
-*   to create
-*   bullet lists.
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6" markdown="1">
-~~~
-1.  Use numbers
-1.  to create
-1.  numbered lists.
-~~~
-{: .source}
-  </div>
-  <div class="col-md-6" markdown="1">
-1.  Use numbers
-1.  to create
-1.  numbered lists.
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6" markdown="1">
-~~~
-# A Level-1 Heading
-~~~
-{: .source}
-  </div>
-  <div class="col-md-6" markdown="1">
-# A Level-1 Heading
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6" markdown="1">
-~~~
-## A Level-2 Heading (etc.)
-~~~
-{: .source}
-  </div>
-  <div class="col-md-6" markdown="1">
-## A Level-2 Heading (etc.)
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6" markdown="1">
-~~~
-Line breaks
-don't matter.
-
-But blank lines
-create new paragraphs.
-~~~
-{: .source}
-  </div>
-  <div class="col-md-6" markdown="1">
-Line breaks
-don't matter.
-
-But blank lines
-create new paragraphs.
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-6" markdown="1">
-~~~
-[Create links](http://software-carpentry.org) with `[...](...)`.
-Or use [named links][data_carpentry].
-
-[data_carpentry]: http://datacarpentry.org
-~~~
-{: .source}
-  </div>
-  <div class="col-md-6" markdown="1">
-[Create links](http://software-carpentry.org) with `[...](...)`.
-Or use [named links][data_carpentry].
-
-[data_carpentry]: http://datacarpentry.org
-  </div>
-</div>
 
 ## Use variables to store values.
 
