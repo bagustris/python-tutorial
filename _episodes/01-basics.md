@@ -49,7 +49,7 @@ For more information about autoreload, you can refer to the documentation [here]
 
 ## Use the IPython for running Python.
 
-*   The [PIP package manager][pip] is an automated way to install the Jupyter notebook.
+*   The [PIP package manager][pip] is an automated way to install the IPython.
     *   In Ubuntu-based, `pip` can be installed with `sudo apt install python3-pip`.
     *   If you have multiple version of Python (e.g., python3.6, python3.8), use instrunction with [get-pip](https://pip.pypa.io/en/stable/installing/#)
 *   "Batteries included": comes with lots of scientific libraries.
@@ -301,18 +301,6 @@ IndexError: string index out of range
 ~~~
 {: .output}
 
-> ## Creating Lists in Markdown
->
-> Create a nested list in a Markdown cell in a notebook that looks like this:
->
-> 1.  Get funding.
-> 2.  Do work.
->     *   Design experiment.
->     *   Collect data.
->     *   Analyze.
-> 3.  Write up.
-> 4.  Publish.
-{: .challenge}
 
 We will study about dictionaries, sets, and tupple later.
 > ## More Math
@@ -328,41 +316,6 @@ We will study about dictionaries, sets, and tupple later.
 > {: .source}
 {: .challenge}
 
-> ## Change an Existing Cell from Code to Markdown
->
-> What happens if you write some Python in a code cell
-> and then you switch it to a Markdown cell?
-> For example,
-> put the following in a code cell:
->
-> ~~~
-> x = 6 * 7 + 12
-> print(x)
-> ~~~
-> {: .python}
->
-> And then run it with shift+return to be sure that it works as a code cell.
-> Now go back to the cell and use escape+M to switch the cell to Markdown
-> and "run" it with shift+return.
-> What happened and how might this be useful?
-{: .challenge}
-
-> ## Equations
->
-> Standard Markdown (such as we're using for these notes) won't render equations,
-> but the Notebook will.
-> Create a new Markdown cell
-> and enter the following:
->
-> ~~~
-> $\Sigma_{i=1}^{N} 2^{-i} \approx 1$
-> ~~~
-> {: .source}
->
-> (It's probably easier to copy and paste.)
-> What does it display?
-> What do you think the underscore `_`, circumflex `^`, and dollar sign `$` do?
-{: .challenge}
 
 > ## Swapping Values
 >
@@ -592,6 +545,5 @@ We will study about dictionaries, sets, and tupple later.
 > {: .python}
 {: .challenge}
 
-[anaconda]: https://docs.continuum.io/anaconda/install
-[jupyter]: http://jupyter.org/
-[markdown]: https://en.wikipedia.org/wiki/Markdown
+[pip]: https://pip.pypa.io/en/stable/
+[IPython]: https://ipython.org/
