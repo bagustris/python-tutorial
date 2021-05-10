@@ -8,7 +8,7 @@ questions:
 objectives:
 - "Launch the IPython, doing some operations, and exit the IPython."
 - "Create and run Python commands in IPython."
-- "Write simple scripts that use atomic data types, variables, and lists."
+- "Write simple scripts (.py files) that use atomic data types, variables, and lists."
 keypoints:
 - "Python programs are plain text files."
 - "We can write Python in the IPython as well as plain text)."
@@ -33,7 +33,7 @@ keypoints:
     *   Provides code completion and other helpful features.
 
 ## IPtyhon
-*   Open it with --pylab option to enable plot interatively
+*   Open it with --pylab option to enable plot interactively
 *   When you need to edit the module and want to take effect immedietly use autoload magic
 
 ~~~
@@ -61,14 +61,15 @@ For more information about autoreload, you can refer to the documentation [here]
     {: .source}
 
     where `python3.6` is the python version you want to launch with IPython.
-*   You can type code inside the shell and see the result below you commands.
+*   You can type code inside the IPython shell and see the result below you commands.
 *   This has several advantages:
     *   You can easily type, edit, and copy and paste blocks of code.
     *   Tab complete allows you to easily access the names of things you are using
         and learn more about them.
-    *   You don't a browser (like Jupyter Notebook) and complicated setup.
+    *   You don't need a browser (like Jupyter Notebook) and complicated setup.
     *   It allows you to display figures next to the code that produces them
         to tell a complete story of the analysis.
+    *   You can `run` other python scripts (.py files) easyly and see the results directly (useful for debugging).
 
 
 > ## Code vs. Text
